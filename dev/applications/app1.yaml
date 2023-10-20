@@ -17,8 +17,8 @@ spec:
       valueFiles:
         - values_dev.yaml
       parameters:
-        - name: "container.image"
-          value: "adv4000/app1:v1"
+      - name: "container.image"
+        value: adv4000/app1:v1
   project: default
   syncPolicy:
     automated:

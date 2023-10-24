@@ -15,11 +15,12 @@ spec:
     targetRevision: HEAD
     helm:
       valueFiles:
-        - values_dev.yaml
-      parameters:
-      - name: "container.image"
-        # value: adv4000/app2:v1 
-        value: mcr.microsoft.com/azuredocs/aci-helloworld
+        # - values_dev.yaml
+        = values.yaml
+      # parameters:
+      # - name: "container.image"
+      #   # value: adv4000/app2:v1 
+      #   value: mcr.microsoft.com/azuredocs/aci-helloworld
   project: default
   syncPolicy:
     automated:
